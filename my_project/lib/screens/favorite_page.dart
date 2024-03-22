@@ -12,7 +12,7 @@ class FavoritePage extends StatelessWidget {
           children: [
             SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.only(right: 25),
+              padding: const EdgeInsets.only(right: 15),
               child: Row(
                 children: [
                   Expanded(
@@ -32,7 +32,7 @@ class FavoritePage extends StatelessWidget {
             ),
             SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                 children: [
                   // Your search bar widget
@@ -46,7 +46,7 @@ class FavoritePage extends StatelessWidget {
                         children: [
                           AppCardsRed(
                             name: 'Janjan',
-                            path: 'teddy.png',
+                            path: 'assets/teddy.png',
                             // Your AppTiles widget
                           ),
                           SizedBox(height: 10),

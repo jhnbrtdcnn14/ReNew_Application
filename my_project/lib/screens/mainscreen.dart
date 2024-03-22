@@ -56,7 +56,7 @@ class _MainScreenState extends State<MainScreen> {
           child: Container(
             margin: EdgeInsets.only(right: 60),
             child: Image.asset(
-              'logo.png', // Your image asset path
+              'assets/logo.png', // Your image asset path
               height: 50, // Adjust height as needed
             ),
           ),

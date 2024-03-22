@@ -22,14 +22,14 @@ class AppSocial extends StatelessWidget {
         children: [
           Image.asset(
             path, // Replace 'path_to_your_image.png' with your actual image path
-            width: 24, // Adjust width as needed
-            height: 24, // Adjust height as needed
+            width: 20, // Adjust width as needed
+            height: 20, // Adjust height as needed
             // Apply color if needed
           ),
-          SizedBox(width: 10), // Add some spacing between the image and text
+          SizedBox(width: 8), // Add some spacing between the image and text
           AppText(
             text: account,
-            size: 13,
+            size: 12,
             color: AppColors.white,
           ),
         ],

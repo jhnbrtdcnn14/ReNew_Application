@@ -24,7 +24,7 @@ class NotificationPage extends StatelessWidget {
               height: 10,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25),
+              padding: EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -44,10 +44,10 @@ class NotificationPage extends StatelessWidget {
                           children: [
                             AppPreviewTiles(
                               name: 'Jay Scavas reacted to your item.',
-                              path: 'heart.png',
+                              path: 'assets/heart.png',
                               icon: Icons.more_horiz_rounded,
                               description: '3 minutes ago',
-                              iconsize: 20,
+                              iconsize: 15,
                             ),
                             SizedBox(height: 10),
                           ],
@@ -71,7 +71,7 @@ class NotificationPage extends StatelessWidget {
                           children: [
                             AppPreviewTiles(
                               name: 'Jay Scavas reacted to your item.',
-                              path: 'heart.png',
+                              path: 'assets/heart.png',
                               icon: Icons.more_horiz_outlined,
                               description: '3 minutes ago',
                               iconsize: 20,

@@ -13,7 +13,7 @@ class AppSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ImageWithTextField(
-      imagePath: 'search.png',
+      imagePath: 'assets/search.png',
       text: text,
     );
   }

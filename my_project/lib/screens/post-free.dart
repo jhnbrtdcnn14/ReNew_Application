@@ -33,7 +33,7 @@ class _PostFreePageState extends State<PostFreePage> {
                 children: [
                   CircleAvatar(
                     radius: 25,
-                    backgroundImage: AssetImage('face.png'),
+                    backgroundImage: AssetImage('assets/face.png'),
                   ),
                   SizedBox.square(
                     dimension: 10,

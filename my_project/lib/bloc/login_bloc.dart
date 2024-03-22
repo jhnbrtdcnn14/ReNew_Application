@@ -10,9 +10,9 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
       emit(LoginLoading());
 
       // Simulate authentication
-      await Future.delayed(const Duration(seconds: 0));
+      await Future.delayed(const Duration(seconds: 2));
 
-      if (event.username == '' && event.password == '') {
+      if (event.username == 'user' && event.password == 'pass') {
         emit(LoginSuccess());
       } else {
         emit(LoginFailure('Invalid credentials'));

@@ -48,13 +48,13 @@ class AppCards extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       CircleAvatar(
-                        radius: 20,
-                        backgroundImage: AssetImage('face.png'),
+                        radius: 15,
+                        backgroundImage: AssetImage('assets/face.png'),
                       ),
-                      SizedBox.square(dimension: 10),
+                      SizedBox.square(dimension: 5),
                       AppText(
                         text: 'Johnbert Decinan',
-                        size: 13,
+                        size: 10,
                         color: AppColors.white,
                         isBold: true,
                       ),
@@ -63,7 +63,7 @@ class AppCards extends StatelessWidget {
                   SizedBox.square(dimension: 10),
                   AppText(
                     text:
-                        'Teddy Bear from my cousin. Chat me if you  are interested.',
+                        'Used Cloting for sale. Chat me if \nyou are interested.',
                     color: AppColors.white,
                     size: 10,
                     isBold: false,
@@ -80,6 +80,9 @@ class AppCards extends StatelessWidget {
                           // Implement your favorite logic here
                         },
                       ),
+                      SizedBox(
+                        width: 3,
+                      ),
                       IconButton(
                         icon: Icon(
                           Icons.chat,
@@ -89,25 +92,26 @@ class AppCards extends StatelessWidget {
                           // Implement your chat logic here
                         },
                       ),
-                      // button
                       SizedBox(
-                        width: 75, // Set the desired width
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            elevation: 10,
-                            backgroundColor: AppColors
-                                .lightgreen, // Set button color to green
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(
-                                  10), // Set border radius to 10
+                        width: 3,
+                      ),
+
+                      // button
+                      Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.lightgreen,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        width: 50, // Set the desired width
+                        child: Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(3.0),
+                            child: AppText(
+                              text: '₱150',
+                              size: 10,
+                              color: AppColors.green,
+                              isBold: true,
                             ),
-                          ),
-                          child: AppText(
-                            text: '₱150',
-                            size: 10,
-                            color: AppColors.green,
-                            isBold: true,
                           ),
                         ),
                       )
@@ -169,13 +173,13 @@ class AppCardsRed extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       CircleAvatar(
-                        radius: 20,
-                        backgroundImage: AssetImage('face.png'),
+                        radius: 15,
+                        backgroundImage: AssetImage('assets/face.png'),
                       ),
-                      SizedBox.square(dimension: 10),
+                      SizedBox.square(dimension: 5),
                       AppText(
                         text: 'Johnbert Decinan',
-                        size: 13,
+                        size: 10,
                         color: AppColors.white,
                         isBold: true,
                       ),
@@ -184,7 +188,7 @@ class AppCardsRed extends StatelessWidget {
                   SizedBox.square(dimension: 10),
                   AppText(
                     text:
-                        'Used Clothing on my High school days. Chat me if your interested.',
+                        'Teddy Bear from my cousin. Chat me if you  are interested.',
                     color: AppColors.white,
                     size: 10,
                     isBold: false,
@@ -195,7 +199,7 @@ class AppCardsRed extends StatelessWidget {
                       IconButton(
                         icon: Icon(
                           Icons.favorite,
-                          color: Colors.red, // Set heart color to red
+                          color: AppColors.red,
                         ),
                         onPressed: () {
                           // Implement your favorite logic here
@@ -211,24 +215,21 @@ class AppCardsRed extends StatelessWidget {
                         },
                       ),
                       // button
-                      SizedBox(
-                        width: 75, // Set the desired width
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            elevation: 10,
-                            backgroundColor: AppColors
-                                .lightgreen, // Set button color to green
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(
-                                  10), // Set border radius to 10
+                      Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.lightgreen,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        width: 50, // Set the desired width
+                        child: Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(3.0),
+                            child: AppText(
+                              text: 'Free',
+                              size: 10,
+                              color: AppColors.green,
+                              isBold: true,
                             ),
-                          ),
-                          child: AppText(
-                            text: 'FREE',
-                            size: 10,
-                            color: AppColors.green,
-                            isBold: true,
                           ),
                         ),
                       )

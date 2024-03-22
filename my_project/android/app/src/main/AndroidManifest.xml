@@ -2,7 +2,7 @@
     <application
         android:label="ReNew"
         android:name="${applicationName}"
-        android:icon="@drawable/logo"> 
+        android:icon="@mipmap/launcher_icon"> 
 
         <activity
             android:name=".MainActivity"

@@ -40,7 +40,7 @@ class AboutPage extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Image.asset(
-                      'bgimage.png', // Or any other image provider
+                      'assets/bgimage.png', // Or any other image provider
                       fit: BoxFit.cover,
                       height: 150, // Adjust the height as needed
                     ),
@@ -70,7 +70,7 @@ class AboutPage extends StatelessWidget {
                             ),
                             child: CircleAvatar(
                               backgroundImage: AssetImage(
-                                  'face.png'), // Replace with profile picture
+                                  'assets/face.png'), // Replace with profile picture
                               radius: 60.0,
                             ),
                           ),
@@ -96,13 +96,14 @@ class AboutPage extends StatelessWidget {
                               Icon(
                                 Icons.favorite,
                                 color: AppColors.lightgreen,
+                                size: 10,
                               ),
                               SizedBox.square(
-                                dimension: 3,
+                                dimension: 2,
                               ),
                               AppText(
                                   text: '99 reacts',
-                                  size: 13,
+                                  size: 12,
                                   color: AppColors.white),
                               SizedBox.square(
                                 dimension: 5,
@@ -110,13 +111,14 @@ class AboutPage extends StatelessWidget {
                               Icon(
                                 Icons.people_rounded,
                                 color: AppColors.lightgreen,
+                                size: 10,
                               ),
                               SizedBox.square(
-                                dimension: 3,
+                                dimension: 2,
                               ),
                               AppText(
                                   text: '60 Friends',
-                                  size: 13,
+                                  size: 12,
                                   color: AppColors.white)
                             ],
                           ),
@@ -130,19 +132,19 @@ class AboutPage extends StatelessWidget {
                         children: [
                           AppSocial(
                             account: 'John Decinan',
-                            path: 'fb.png',
+                            path: 'assets/fb.png',
                           ),
                           AppSocial(
                             account: 'Jhnbrtdcnn14',
-                            path: 'insta.png',
+                            path: 'assets/insta.png',
                           ),
                           AppSocial(
                             account: '@janjan14',
-                            path: 'twitter.png',
+                            path: 'assets/twitter.png',
                           ),
                           AppSocial(
                             account: '+69487854125',
-                            path: 'whatsapp.png',
+                            path: 'assets/whatsapp.png',
                           ),
                         ],
                       ),
@@ -156,9 +158,9 @@ class AboutPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(
                     top: 330,
-                    left: 25,
+                    left: 15,
                     right:
-                        25), // Adjust top padding to prevent overlap with header image
+                        15), // Adjust top padding to prevent overlap with header image
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3, // Adjust cross axis count as needed
@@ -169,13 +171,13 @@ class AboutPage extends StatelessWidget {
                     if (index % 2 == 0) {
                       // Even index
                       return AboutCards(
-                        path: 'teddy.png',
+                        path: 'assets/teddy.png',
                         text: 'Teddy',
                       );
                     } else {
                       // Odd index
                       return AboutCards(
-                        path: 'cloting.png',
+                        path: 'assets/cloting.png',
                         text: 'Cloting',
                       );
                     }

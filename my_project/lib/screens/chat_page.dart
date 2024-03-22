@@ -16,10 +16,10 @@ class ChatPage extends StatelessWidget {
               height: 10,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 25),
+              padding: const EdgeInsets.only(left: 15),
               child: Row(
                 children: [
-                  AppText(text: 'Chats', size: 35, color: AppColors.offwhite),
+                  AppText(text: 'Chats', size: 20, color: AppColors.offwhite),
                   Expanded(
                     child: AppSearch(text: 'Search an item'),
                   ),
@@ -30,7 +30,7 @@ class ChatPage extends StatelessWidget {
               height: 10,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 25),
+              padding: EdgeInsets.symmetric(horizontal: 15),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -46,7 +46,7 @@ class ChatPage extends StatelessWidget {
                           children: [
                             AppPreviewTiles(
                               name: 'Jay Scavas',
-                              path: 'face.png',
+                              path: 'assets/face.png',
                               description: 'Hey, how are you?',
                               icon: Icons.circle,
                               iconsize: 15,

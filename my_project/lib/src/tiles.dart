@@ -183,14 +183,14 @@ class AppPreviewTiles extends StatelessWidget {
                     children: [
                       AppText(
                         text: name,
-                        size: 13,
+                        size: 10,
                         color: AppColors.white,
                         isBold: true,
                       ),
                       SizedBox(height: 10),
                       AppText(
                         text: description,
-                        size: 10,
+                        size: 8,
                         color: AppColors.offwhite,
                       ),
                     ],

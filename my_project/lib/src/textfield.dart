@@ -20,7 +20,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       child: TextField(
         controller: controller,
         textAlign: TextAlign.center,
@@ -101,14 +101,16 @@ class ImageWithTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25, right: 25),
+      padding: const EdgeInsets.only(left: 15, right: 15),
       child: Container(
+        height: 50,
         decoration: BoxDecoration(
           color: AppColors.lightgrey,
           borderRadius: BorderRadius.circular(10), // Border radius of 10
         ),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Stack(
               alignment: Alignment.center,
@@ -117,16 +119,16 @@ class ImageWithTextField extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: Container(
                     color: const Color.fromARGB(0, 255, 255, 255),
-                    width: 55,
-                    height: 55,
+                    width: 40,
+                    height: 40,
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 10),
                   child: Image.asset(
                     imagePath,
-                    width: 35,
-                    height: 35,
+                    width: 30,
+                    height: 30,
                   ),
                 ),
               ],

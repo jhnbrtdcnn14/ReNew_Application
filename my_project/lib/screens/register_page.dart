@@ -37,6 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
+                          SizedBox(height: 50),
                           //logo
                           Container(
                             width: 500, // Replace with desired width

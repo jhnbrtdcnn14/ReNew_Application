@@ -18,7 +18,7 @@ class AppButtons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Row(
         children: [
           Expanded(
@@ -40,7 +40,7 @@ class AppButtons extends StatelessWidget {
               child: Text(
                 text,
                 style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 15,
                     fontWeight: FontWeight.bold,
                     color: textcolor),
               ),
